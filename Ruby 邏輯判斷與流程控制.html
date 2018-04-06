@@ -1,0 +1,452 @@
+<HTML>
+<HEAD>
+  <TITLE>Ruby 邏輯判斷與流程控制.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "陳咨諺, 概念图, cmap, CmapTools, IHMC, Ruby 邏輯判斷與流程控制,  .each迭代,  布林真假判斷,  迭代,  if 條件判斷式,  friends = [“Joey”,”Jimmy”,”Tom”,””Andy] friends.each do |friend| puts friend end,  i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end,  .downto迭代,  ＃陣列(for...in...end) #範圍(for...in...do...end) #next用法(While, Until, For或其他迭代都適用) (for...in...next...end),  case條件判斷式,  until迴圈,  unless a &#62 9 puts"a大於9" else puts"a小於等於9" end,  三元運算子,  Ruby 邏輯判斷與流程控制,  !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false,  10.downto(1) { |i| puts "剩下#{i}次" },  條件判斷,  while迴圈,  counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end,  #很多的『如果…不然就…』 season = "春天" case season when "春天" puts "春暖花開" when"夏天" puts"烈陽高照" when"秋天" puts"秋高氣爽" else puts"寒冬臘月" end,  for迴圈">
+  <meta NAME = "DESCRIPTION"        CONTENT = "此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, case條件判斷式 例如 #很多的『如果…不然就…』 season = "春天" case season when "春天" puts "春暖花開" when"夏天" puts"烈陽高照" when"秋天" puts"秋高氣爽" else puts"寒冬臘月" end, 循環迴圈 包括 while迴圈, .each迭代 例如 friends = [“Joey”,”Jimmy”,”Tom”,””Andy] friends.each do |friend| puts friend end, for迴圈 例如 ＃陣列(for...in...end) #範圍(for...in...do...end) #next用法(While, Until, For或其他迭代都適用) (for...in...next...end), 條件判斷 包括 unless條件判斷式, while迴圈 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end, Ruby 邏輯判斷與流程控制 包括 條件判斷, 條件判斷 包括 if 條件判斷式, Ruby 邏輯判斷與流程控制 包括 迭代, 條件判斷 包括 三元運算子, Ruby 邏輯判斷與流程控制 包括 循環迴圈, 循環迴圈 包括 until迴圈, 迭代 包括 .times 迭代, 迭代 包括 upto 迭代, 迭代 包括 .each迭代, unless條件判斷式 例如 unless a &#62 9 puts"a大於9" else puts"a小於等於9" end, .times 迭代 例如 3.times do puts “Hello,Ruby.” end, 布林真假判斷 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, 循環迴圈 包括 for迴圈, .downto迭代 例如 10.downto(1) { |i| puts "剩下#{i}次" }">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 4.11, http://cmap.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport@ihmc.us
+    //  Date: 12/14/2006
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.layerX;
+	    document.getElementById(popupName).style.top = event.layerY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, case條件判斷式 例如 #很多的『如果…不然就…』 season = "春天" case season when "春天" puts "春暖花開" when"夏天" puts"烈陽高照" when"秋天" puts"秋高氣爽" else puts"寒冬臘月" end, 循環迴圈 包括 while迴圈, .each迭代 例如 friends = [“Joey”,”Jimmy”,”Tom”,””Andy] friends.each do |friend| puts friend end, for迴圈 例如 ＃陣列(for...in...end) #範圍(for...in...do...end) #next用法(While, Until, For或其他迭代都適用) (for...in...next...end), 條件判斷 包括 unless條件判斷式, while迴圈 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end, Ruby 邏輯判斷與流程控制 包括 條件判斷, 條件判斷 包括 if 條件判斷式, Ruby 邏輯判斷與流程控制 包括 迭代, 條件判斷 包括 三元運算子, Ruby 邏輯判斷與流程控制 包括 循環迴圈, 循環迴圈 包括 until迴圈, 迭代 包括 .times 迭代, 迭代 包括 upto 迭代, 迭代 包括 .each迭代, unless條件判斷式 例如 unless a &#62 9 puts"a大於9" else puts"a小於等於9" end, .times 迭代 例如 3.times do puts “Hello,Ruby.” end, 布林真假判斷 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, 循環迴圈 包括 for迴圈, .downto迭代 例如 10.downto(1) { |i| puts "剩下#{i}次" }
+
+</noscript>
+
+<map name="Ruby 邏輯判斷與流程控制.html">
+  <area shape="rect"
+        href="1SB4SC4V8I12N7FG5I1XRItextIhtml"
+        onClick="popUpEvt(event,'1SB4SC4V8I12N7FG5I1XRItextIhtml'); return false;"
+        coords="1859,539,1877,557">
+  <area shape="rect"
+        href="1SB4S0MQ1I1NB7NGVI1LKItextIhtml"
+        onClick="popUpEvt(event,'1SB4S0MQ1I1NB7NGVI1LKItextIhtml'); return false;"
+        coords="150,404,168,422">
+  <area shape="rect"
+        href="1SB4RQ3KHI1C1X9Z9I1BHItextIhtml"
+        onClick="popUpEvt(event,'1SB4RQ3KHI1C1X9Z9I1BHItextIhtml'); return false;"
+        coords="685,407,703,425">
+  <area shape="rect"
+        href="1SB5C612FIJSYB3HI63YItextIhtml"
+        onClick="popUpEvt(event,'1SB5C612FIJSYB3HI63YItextIhtml'); return false;"
+        coords="2020,403,2038,421">
+  <area shape="rect"
+        href="1SB557L07I1QRNYSTI4PPItextIhtml"
+        onClick="popUpEvt(event,'1SB557L07I1QRNYSTI4PPItextIhtml'); return false;"
+        coords="426,266,444,284">
+  <area shape="rect"
+        href="1SB4S5BTFI202J6T0I1TXItextIhtml"
+        onClick="popUpEvt(event,'1SB4S5BTFI202J6T0I1TXItextIhtml'); return false;"
+        coords="1376,202,1394,220">
+  <area shape="rect"
+        href="1SB54PWC6IVKNL1SI4CGItextIhtml"
+        onClick="popUpEvt(event,'1SB54PWC6IVKNL1SI4CGItextIhtml'); return false;"
+        coords="128,179,146,197">
+  <area shape="rect"
+        href="1SB4RRD0LI13SWPP0I1F9ItextIhtml"
+        onClick="popUpEvt(event,'1SB4RRD0LI13SWPP0I1F9ItextIhtml'); return false;"
+        coords="1001,201,1019,219">
+  <area shape="rect"
+        href="1SB4RQSS6I1LFMRDZI1D6ItextIhtml"
+        onClick="popUpEvt(event,'1SB4RQSS6I1LFMRDZI1D6ItextIhtml'); return false;"
+        coords="1188,330,1206,348">
+  <area shape="rect"
+        href="1SB4S1DLMIMCRMRGI1NBItextIhtml"
+        onClick="popUpEvt(event,'1SB4S1DLMIMCRMRGI1NBItextIhtml'); return false;"
+        coords="697,178,715,196">
+  <area shape="rect"
+        href="1SB4SCD5DI1H4JXZMI1Y4ItextIhtml"
+        onClick="popUpEvt(event,'1SB4SCD5DI1H4JXZMI1Y4ItextIhtml'); return false;"
+        coords="1705,399,1723,417">
+  <area shape="rect"
+        href="1SB4SBLZKI1JK1MSXI1X6ItextIhtml"
+        onClick="popUpEvt(event,'1SB4SBLZKI1JK1MSXI1X6ItextIhtml'); return false;"
+        coords="1642,198,1660,216">
+  <area shape="rect"
+        href="1SB5C5PNMI86CVSXI63LItextIhtml"
+        onClick="popUpEvt(event,'1SB5C5PNMI86CVSXI63LItextIhtml'); return false;"
+        coords="2054,198,2072,216">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#Ruby 邏輯判斷與流程控制.html"
+             SRC="Ruby 邏輯判斷與流程控制.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+              <img USEMAP="#CmapToolsTrademark"
+                   SRC="CmapToolsTrademark.gif" 
+                   ALT="IHMC Cmap Tools Trademark" width="210" height="50"
+                   ALIGN=middle
+                   BORDER=0>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+<div id="1SB4SC4V8I12N7FG5I1XRItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/TallMushyWorkspace "TITLE="">
+      each迭代(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4S0MQ1I1NB7NGVI1LKItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/Bu-Lin-Zhen-Jia-Pan-Duan "TITLE="">
+      布林真假判斷(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4RQ3KHI1C1X9Z9I1BHItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/ifTiao-Jian-Pan-Duan-Shi "TITLE="">
+      if條件判斷式(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB5C612FIJSYB3HI63YItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/downtoDie-Dai "TITLE="">
+      downto迭代(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB557L07I1QRNYSTI4PPItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/caseTiao-Jian-Pan-Duan-Shi "TITLE="">
+      case條件判斷式
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4S5BTFI202J6T0I1TXItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/untilHui-Quan "TITLE="">
+      until迴圈(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB54PWC6IVKNL1SI4CGItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/San-Yuan-Yun-Suan-Zi "TITLE="">
+      三元運算子
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4RRD0LI13SWPP0I1F9ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/whileHui-Quan "TITLE="">
+      while迴圈(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4RQSS6I1LFMRDZI1D6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/forHui-Quan "TITLE="">
+      for迴圈(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4S1DLMIMCRMRGI1NBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/unlessTiao-Jian-Pan-Duan-Shi "TITLE="">
+      unless條件判斷式
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4SCD5DI1H4JXZMI1Y4ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/timesDie-Dai "TITLE="">
+      times迭代(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4SBLZKI1JK1MSXI1X6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/loopDie-Dai "TITLE="">
+      loop迭代(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB5C5PNMI86CVSXI63LItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/uptoDie-Dai "TITLE="">
+      upto迭代(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
