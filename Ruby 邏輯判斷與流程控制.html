@@ -3,7 +3,7 @@
   <TITLE>Ruby 邏輯判斷與流程控制.html</TITLE>
   <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
   <meta NAME = "KEYWORDS"           CONTENT = "陳咨諺, 概念图, cmap, CmapTools, IHMC, Ruby 邏輯判斷與流程控制,  語法： loop do code break condition end,  friends = ["Joey","Jimmy","Tom","Andy"] friends.each do |friend| puts friend end,  迭代,  語法： (如果…或是如果這樣…不然就…) if conditional code... [elsif conditional code...]... [else code...] end,  i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end,  counter = 0 until counter &#62=5 counter+=1 puts"第#{counter}次" end,  語法： 布林值為true、false,  三元運算子,  語法： unless conditional [then] code [else code ] end,  布林真假判斷,  .downto迭代,  語法： for variable [, variable ...] in expression [do] code end,  語法： until conditional [do] code end,  .each迭代,  .times 迭代,  unless條件判斷式,  條件判斷,  gender = 1 title = (gender == 1) ?”男生”:“女生” puts title,  1.upto(10) { |i| puts "第#{i}次" },  !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false">
-  <meta NAME = "DESCRIPTION"        CONTENT = "此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, .each迭代 的 語法： collection . each do | variable | code end, 語法： num.times do code end 例如 3.times do puts "Hello,Ruby." end, 迭代 包括 .downto迭代, 循環迴圈 包括 until迴圈, loop 迭代 的 語法： loop do code break condition end, unless條件判斷式 的 語法： unless conditional [then] code [else code ] end, until迴圈 的 語法： until conditional [do] code end, 語法： unless conditional [then] code [else code ] end 例如 unless a &#62 9 puts"a大於9" else puts"a小於等於9" end, 條件判斷 包括 case條件判斷式, 語法： large-num.downto(small-num) {|i| code } 例如 10.downto(1) { |i| puts "剩下#{i}次" }, .downto迭代 的 語法： large-num.downto(small-num) {|i| code }, 語法： 布林值為true、false 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, case條件判斷式 的 語法： case expression [when expression code ]... [else code ] end, 迭代 包括 .times 迭代, 語法： while conditional [do] code end 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end, 布林真假判斷 的 語法： 布林值為true、false, 語法： until conditional [do] code end 例如 counter = 0 until counter &#62=5 counter+=1 puts"第#{counter}次" end, 語法： loop do code break condition end 例如 i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end, 迭代 包括 .each迭代, 語法： collection . each do | variable | code end 例如 friends = ["Joey","Jimmy","Tom","Andy"] friends.each do |friend| puts friend end">
+  <meta NAME = "DESCRIPTION"        CONTENT = "此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false 總結 單元習題, i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end 總結 單元習題, .each迭代 的 語法： collection . each do | variable | code end, 1.upto(10) { |i| puts "第#{i}次" } 總結 單元習題, 語法： num.times do code end 例如 3.times do puts "Hello,Ruby." end, 迭代 包括 .downto迭代, 循環迴圈 包括 until迴圈, loop 迭代 的 語法： loop do code break condition end, unless條件判斷式 的 語法： unless conditional [then] code [else code ] end, until迴圈 的 語法： until conditional [do] code end, gender = 1 title = (gender == 1) ?”男生”:“女生” puts title 總結 單元習題, 3.times do puts "Hello,Ruby." end 總結 單元習題, 語法： unless conditional [then] code [else code ] end 例如 unless a &#62 9 puts"a大於9" else puts"a小於等於9" end, 條件判斷 包括 case條件判斷式, 語法： large-num.downto(small-num) {|i| code } 例如 10.downto(1) { |i| puts "剩下#{i}次" }, .downto迭代 的 語法： large-num.downto(small-num) {|i| code }, 語法： 布林值為true、false 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, case條件判斷式 的 語法： case expression [when expression code ]... [else code ] end, 迭代 包括 .times 迭代, 語法： while conditional [do] code end 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end">
   <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
   <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
   <script LANGUAGE="JavaScript1.2">
@@ -205,7 +205,7 @@
       </td>
     </tr>
   </table>
-此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, .each迭代 的 語法： collection . each do | variable | code end, 語法： num.times do code end 例如 3.times do puts "Hello,Ruby." end, 迭代 包括 .downto迭代, 循環迴圈 包括 until迴圈, loop 迭代 的 語法： loop do code break condition end, unless條件判斷式 的 語法： unless conditional [then] code [else code ] end, until迴圈 的 語法： until conditional [do] code end, 語法： unless conditional [then] code [else code ] end 例如 unless a &#62 9 puts"a大於9" else puts"a小於等於9" end, 條件判斷 包括 case條件判斷式, 語法： large-num.downto(small-num) {|i| code } 例如 10.downto(1) { |i| puts "剩下#{i}次" }, .downto迭代 的 語法： large-num.downto(small-num) {|i| code }, 語法： 布林值為true、false 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, case條件判斷式 的 語法： case expression [when expression code ]... [else code ] end, 迭代 包括 .times 迭代, 語法： while conditional [do] code end 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end, 布林真假判斷 的 語法： 布林值為true、false, 語法： until conditional [do] code end 例如 counter = 0 until counter &#62=5 counter+=1 puts"第#{counter}次" end, 語法： loop do code break condition end 例如 i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end, 迭代 包括 .each迭代, 語法： collection . each do | variable | code end 例如 friends = ["Joey","Jimmy","Tom","Andy"] friends.each do |friend| puts friend end
+此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false 總結 單元習題, i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end 總結 單元習題, .each迭代 的 語法： collection . each do | variable | code end, 1.upto(10) { |i| puts "第#{i}次" } 總結 單元習題, 語法： num.times do code end 例如 3.times do puts "Hello,Ruby." end, 迭代 包括 .downto迭代, 循環迴圈 包括 until迴圈, loop 迭代 的 語法： loop do code break condition end, unless條件判斷式 的 語法： unless conditional [then] code [else code ] end, until迴圈 的 語法： until conditional [do] code end, gender = 1 title = (gender == 1) ?”男生”:“女生” puts title 總結 單元習題, 3.times do puts "Hello,Ruby." end 總結 單元習題, 語法： unless conditional [then] code [else code ] end 例如 unless a &#62 9 puts"a大於9" else puts"a小於等於9" end, 條件判斷 包括 case條件判斷式, 語法： large-num.downto(small-num) {|i| code } 例如 10.downto(1) { |i| puts "剩下#{i}次" }, .downto迭代 的 語法： large-num.downto(small-num) {|i| code }, 語法： 布林值為true、false 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, case條件判斷式 的 語法： case expression [when expression code ]... [else code ] end, 迭代 包括 .times 迭代, 語法： while conditional [do] code end 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end
 
 </noscript>
 
@@ -238,6 +238,10 @@
         href="1SB4S5BTFI202J6T0I1TXItextIhtml"
         onClick="popUpEvt(event,'1SB4S5BTFI202J6T0I1TXItextIhtml'); return false;"
         coords="1686,214,1704,232">
+  <area shape="rect"
+        href="1SC577Y3BI10T077FICSGItextIhtml"
+        onClick="popUpEvt(event,'1SC577Y3BI10T077FICSGItextIhtml'); return false;"
+        coords="1475,1365,1493,1383">
   <area shape="rect"
         href="1SB4RRD0LI13SWPP0I1F9ItextIhtml"
         onClick="popUpEvt(event,'1SB4RRD0LI13SWPP0I1F9ItextIhtml'); return false;"
@@ -378,6 +382,17 @@
       <td nowrap><font face="Geneva, Arial" size=2>
       <a href="https://repl.it/@z1z1z1joey/untilHui-Quan "TITLE="">
       until迴圈(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SC577Y3BI10T077FICSGItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/forHui-Quan "TITLE="">
+      for迴圈(程式碼)
       </a>
       </td>
     </tr>
