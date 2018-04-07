@@ -2,8 +2,8 @@
 <HEAD>
   <TITLE>Ruby 邏輯判斷與流程控制.html</TITLE>
   <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
-  <meta NAME = "KEYWORDS"           CONTENT = "陳咨諺, 概念图, cmap, CmapTools, IHMC, Ruby 邏輯判斷與流程控制,  語法： loop do code break condition end,  friends = ["Joey","Jimmy","Tom","Andy"] friends.each do |friend| puts friend end,  迭代,  語法： (如果…或是如果這樣…不然就…) if conditional code... [elsif conditional code...]... [else code...] end,  i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end,  counter = 0 until counter &#62=5 counter+=1 puts"第#{counter}次" end,  語法： 布林值為true、false,  三元運算子,  語法： unless conditional [then] code [else code ] end,  布林真假判斷,  .downto迭代,  語法： for variable [, variable ...] in expression [do] code end,  語法： until conditional [do] code end,  .each迭代,  .times 迭代,  unless條件判斷式,  條件判斷,  gender = 1 title = (gender == 1) ?”男生”:“女生” puts title,  1.upto(10) { |i| puts "第#{i}次" },  !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false">
-  <meta NAME = "DESCRIPTION"        CONTENT = "此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false 總結 單元習題, i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end 總結 單元習題, .each迭代 的 語法： collection . each do | variable | code end, 1.upto(10) { |i| puts "第#{i}次" } 總結 單元習題, 語法： num.times do code end 例如 3.times do puts "Hello,Ruby." end, 迭代 包括 .downto迭代, 循環迴圈 包括 until迴圈, loop 迭代 的 語法： loop do code break condition end, unless條件判斷式 的 語法： unless conditional [then] code [else code ] end, until迴圈 的 語法： until conditional [do] code end, gender = 1 title = (gender == 1) ?”男生”:“女生” puts title 總結 單元習題, 3.times do puts "Hello,Ruby." end 總結 單元習題, 語法： unless conditional [then] code [else code ] end 例如 unless a &#62 9 puts"a大於9" else puts"a小於等於9" end, 條件判斷 包括 case條件判斷式, 語法： large-num.downto(small-num) {|i| code } 例如 10.downto(1) { |i| puts "剩下#{i}次" }, .downto迭代 的 語法： large-num.downto(small-num) {|i| code }, 語法： 布林值為true、false 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, case條件判斷式 的 語法： case expression [when expression code ]... [else code ] end, 迭代 包括 .times 迭代, 語法： while conditional [do] code end 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end">
+  <meta NAME = "KEYWORDS"           CONTENT = "陳咨諺, 概念图, cmap, CmapTools, IHMC, Ruby 邏輯判斷與流程控制,  語法： expression ? true_expression : false_expression,  until迴圈,  布林真假判斷,  條件判斷,  語法： until conditional [do] code end,  語法： loop do code break condition end,  語法： large-num.downto(small-num) {|i| code },  .times 迭代,  .each迭代,  語法： collection . each do | variable | code end,  ＃陣列(for...in...end) #範圍(for...in...do...end) #next用法(While, Until, For或其他迭代都適用) (for...in...next...end),  語法： for variable [, variable ...] in expression [do] code end,  迭代,  單元習題,  !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false,  語法： while conditional [do] code end,  語法： num.times do code end,  Ruby 邏輯判斷與流程控制,  counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end,  loop 迭代">
+  <meta NAME = "DESCRIPTION"        CONTENT = "此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, 語法： 布林值為true、false 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, counter = 0 until counter &#62=5 counter+=1 puts"第#{counter}次" end 總結 單元習題, loop 迭代 的 語法： loop do code break condition end, 條件判斷 包括 unless條件判斷式, 語法： while conditional [do] code end 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end, 語法： large-num.downto(small-num) {|i| code } 例如 10.downto(1) { |i| puts "剩下#{i}次" }, 語法： loop do code break condition end 例如 i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end, 迭代 包括 loop 迭代, 條件判斷 包括 三元運算子, 條件判斷 包括 case條件判斷式, 循環迴圈 包括 for迴圈, .each迭代 的 語法： collection . each do | variable | code end, 語法： (如果…或是如果這樣…不然就…) if conditional code... [elsif conditional code...]... [else code...] end 例如 1.如果… (if…end) 2.如果…不然就… (if...else...end) 3.如果…或是如果這樣…不然就… (if...elif...else...end), Ruby 邏輯判斷與流程控制 包括 循環迴圈, Ruby 邏輯判斷與流程控制 包括 迭代, until迴圈 的 語法： until conditional [do] code end, 迭代 包括 .downto迭代, 三元運算子 的 語法： expression ? true_expression : false_expression, 迭代 包括 upto 迭代, gender = 1 title = (gender == 1) ?”男生”:“女生” puts title 總結 單元習題">
   <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
   <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
   <script LANGUAGE="JavaScript1.2">
@@ -205,67 +205,63 @@
       </td>
     </tr>
   </table>
-此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false 總結 單元習題, i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end 總結 單元習題, .each迭代 的 語法： collection . each do | variable | code end, 1.upto(10) { |i| puts "第#{i}次" } 總結 單元習題, 語法： num.times do code end 例如 3.times do puts "Hello,Ruby." end, 迭代 包括 .downto迭代, 循環迴圈 包括 until迴圈, loop 迭代 的 語法： loop do code break condition end, unless條件判斷式 的 語法： unless conditional [then] code [else code ] end, until迴圈 的 語法： until conditional [do] code end, gender = 1 title = (gender == 1) ?”男生”:“女生” puts title 總結 單元習題, 3.times do puts "Hello,Ruby." end 總結 單元習題, 語法： unless conditional [then] code [else code ] end 例如 unless a &#62 9 puts"a大於9" else puts"a小於等於9" end, 條件判斷 包括 case條件判斷式, 語法： large-num.downto(small-num) {|i| code } 例如 10.downto(1) { |i| puts "剩下#{i}次" }, .downto迭代 的 語法： large-num.downto(small-num) {|i| code }, 語法： 布林值為true、false 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, case條件判斷式 的 語法： case expression [when expression code ]... [else code ] end, 迭代 包括 .times 迭代, 語法： while conditional [do] code end 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end
+此概念图以 IHMC CmapTools 创建, 内含信息有关于: Ruby 邏輯判斷與流程控制, 語法： 布林值為true、false 例如 !true ＝&#62 false true && false =&#62 false true || true =&#62 true true || false =&#62 true false || false =&#62 false !false && (!true || 0 != 100%10) =&#62 false, counter = 0 until counter &#62=5 counter+=1 puts"第#{counter}次" end 總結 單元習題, loop 迭代 的 語法： loop do code break condition end, 條件判斷 包括 unless條件判斷式, 語法： while conditional [do] code end 例如 counter = 0 while counter &#60 5 puts”倒數#{counter}” // counter +=1 until counter &#625 counter += 1 end, 語法： large-num.downto(small-num) {|i| code } 例如 10.downto(1) { |i| puts "剩下#{i}次" }, 語法： loop do code break condition end 例如 i = 10 loop do puts "Hello #{i}" i -= 1 break if i &#60= 5 end, 迭代 包括 loop 迭代, 條件判斷 包括 三元運算子, 條件判斷 包括 case條件判斷式, 循環迴圈 包括 for迴圈, .each迭代 的 語法： collection . each do | variable | code end, 語法： (如果…或是如果這樣…不然就…) if conditional code... [elsif conditional code...]... [else code...] end 例如 1.如果… (if…end) 2.如果…不然就… (if...else...end) 3.如果…或是如果這樣…不然就… (if...elif...else...end), Ruby 邏輯判斷與流程控制 包括 循環迴圈, Ruby 邏輯判斷與流程控制 包括 迭代, until迴圈 的 語法： until conditional [do] code end, 迭代 包括 .downto迭代, 三元運算子 的 語法： expression ? true_expression : false_expression, 迭代 包括 upto 迭代, gender = 1 title = (gender == 1) ?”男生”:“女生” puts title 總結 單元習題
 
 </noscript>
 
 <map name="Ruby 邏輯判斷與流程控制.html">
   <area shape="rect"
-        href="1SB54PWC6IVKNL1SI4CGItextIhtml"
-        onClick="popUpEvt(event,'1SB54PWC6IVKNL1SI4CGItextIhtml'); return false;"
-        coords="214,191,232,209">
+        href="1SB4S5BTFI202J6T0I1TXItextIhtml"
+        onClick="popUpEvt(event,'1SB4S5BTFI202J6T0I1TXItextIhtml'); return false;"
+        coords="1686,214,1704,232">
   <area shape="rect"
         href="1SB4S0MQ1I1NB7NGVI1LKItextIhtml"
         onClick="popUpEvt(event,'1SB4S0MQ1I1NB7NGVI1LKItextIhtml'); return false;"
         coords="856,654,874,672">
   <area shape="rect"
-        href="1SB5C612FIJSYB3HI63YItextIhtml"
-        onClick="popUpEvt(event,'1SB5C612FIJSYB3HI63YItextIhtml'); return false;"
-        coords="2464,261,2482,279">
+        href="1SB4SCD5DI1H4JXZMI1Y4ItextIhtml"
+        onClick="popUpEvt(event,'1SB4SCD5DI1H4JXZMI1Y4ItextIhtml'); return false;"
+        coords="2203,257,2221,275">
   <area shape="rect"
         href="1SB4SC4V8I12N7FG5I1XRItextIhtml"
         onClick="popUpEvt(event,'1SB4SC4V8I12N7FG5I1XRItextIhtml'); return false;"
         coords="2313,585,2331,603">
   <area shape="rect"
-        href="1SB4SCD5DI1H4JXZMI1Y4ItextIhtml"
-        onClick="popUpEvt(event,'1SB4SCD5DI1H4JXZMI1Y4ItextIhtml'); return false;"
-        coords="2203,257,2221,275">
-  <area shape="rect"
-        href="1SB4S1DLMIMCRMRGI1NBItextIhtml"
-        onClick="popUpEvt(event,'1SB4S1DLMIMCRMRGI1NBItextIhtml'); return false;"
-        coords="862,190,880,208">
-  <area shape="rect"
-        href="1SB4S5BTFI202J6T0I1TXItextIhtml"
-        onClick="popUpEvt(event,'1SB4S5BTFI202J6T0I1TXItextIhtml'); return false;"
-        coords="1686,214,1704,232">
-  <area shape="rect"
-        href="1SC577Y3BI10T077FICSGItextIhtml"
-        onClick="popUpEvt(event,'1SC577Y3BI10T077FICSGItextIhtml'); return false;"
-        coords="1475,1365,1493,1383">
+        href="1SB4SBLZKI1JK1MSXI1X6ItextIhtml"
+        onClick="popUpEvt(event,'1SB4SBLZKI1JK1MSXI1X6ItextIhtml'); return false;"
+        coords="1990,253,2008,271">
   <area shape="rect"
         href="1SB4RRD0LI13SWPP0I1F9ItextIhtml"
         onClick="popUpEvt(event,'1SB4RRD0LI13SWPP0I1F9ItextIhtml'); return false;"
         coords="1260,213,1278,231">
   <area shape="rect"
-        href="1SB557L07I1QRNYSTI4PPItextIhtml"
-        onClick="popUpEvt(event,'1SB557L07I1QRNYSTI4PPItextIhtml'); return false;"
-        coords="525,379,543,397">
-  <area shape="rect"
         href="1SB4RQ3KHI1C1X9Z9I1BHItextIhtml"
         onClick="popUpEvt(event,'1SB4RQ3KHI1C1X9Z9I1BHItextIhtml'); return false;"
         coords="194,528,212,546">
   <area shape="rect"
-        href="1SB4RQSS6I1LFMRDZI1D6ItextIhtml"
-        onClick="popUpEvt(event,'1SB4RQSS6I1LFMRDZI1D6ItextIhtml'); return false;"
-        coords="1472,552,1490,570">
+        href="1SB54PWC6IVKNL1SI4CGItextIhtml"
+        onClick="popUpEvt(event,'1SB54PWC6IVKNL1SI4CGItextIhtml'); return false;"
+        coords="214,191,232,209">
   <area shape="rect"
         href="1SB5C5PNMI86CVSXI63LItextIhtml"
         onClick="popUpEvt(event,'1SB5C5PNMI86CVSXI63LItextIhtml'); return false;"
         coords="2771,266,2789,284">
   <area shape="rect"
-        href="1SB4SBLZKI1JK1MSXI1X6ItextIhtml"
-        onClick="popUpEvt(event,'1SB4SBLZKI1JK1MSXI1X6ItextIhtml'); return false;"
-        coords="1990,253,2008,271">
+        href="1SB4S1DLMIMCRMRGI1NBItextIhtml"
+        onClick="popUpEvt(event,'1SB4S1DLMIMCRMRGI1NBItextIhtml'); return false;"
+        coords="862,190,880,208">
+  <area shape="rect"
+        href="1SB557L07I1QRNYSTI4PPItextIhtml"
+        onClick="popUpEvt(event,'1SB557L07I1QRNYSTI4PPItextIhtml'); return false;"
+        coords="525,379,543,397">
+  <area shape="rect"
+        href="1SB4RQSS6I1LFMRDZI1D6ItextIhtml"
+        onClick="popUpEvt(event,'1SB4RQSS6I1LFMRDZI1D6ItextIhtml'); return false;"
+        coords="1472,552,1490,570">
+  <area shape="rect"
+        href="1SB5C612FIJSYB3HI63YItextIhtml"
+        onClick="popUpEvt(event,'1SB5C612FIJSYB3HI63YItextIhtml'); return false;"
+        coords="2464,261,2482,279">
 </map>
 
 <center>
@@ -310,12 +306,12 @@
 </center>
 </BODY>
 </HTML>
-<div id="1SB54PWC6IVKNL1SI4CGItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<div id="1SB4S5BTFI202J6T0I1TXItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
   <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
     <tr>
       <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/San-Yuan-Yun-Suan-Zi "TITLE="">
-      三元運算子
+      <a href="https://repl.it/@z1z1z1joey/untilHui-Quan "TITLE="">
+      until迴圈(程式碼)
       </a>
       </td>
     </tr>
@@ -332,12 +328,12 @@
     </tr>
   </table>
 </div>
-<div id="1SB5C612FIJSYB3HI63YItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<div id="1SB4SCD5DI1H4JXZMI1Y4ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
   <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
     <tr>
       <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/downtoDie-Dai "TITLE="">
-      downto迭代(程式碼)
+      <a href="https://repl.it/@z1z1z1joey/timesDie-Dai "TITLE="">
+      times迭代(程式碼)
       </a>
       </td>
     </tr>
@@ -354,45 +350,12 @@
     </tr>
   </table>
 </div>
-<div id="1SB4SCD5DI1H4JXZMI1Y4ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<div id="1SB4SBLZKI1JK1MSXI1X6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
   <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
     <tr>
       <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/timesDie-Dai "TITLE="">
-      times迭代(程式碼)
-      </a>
-      </td>
-    </tr>
-  </table>
-</div>
-<div id="1SB4S1DLMIMCRMRGI1NBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
-  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
-    <tr>
-      <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/unlessTiao-Jian-Pan-Duan-Shi "TITLE="">
-      unless條件判斷式
-      </a>
-      </td>
-    </tr>
-  </table>
-</div>
-<div id="1SB4S5BTFI202J6T0I1TXItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
-  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
-    <tr>
-      <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/untilHui-Quan "TITLE="">
-      until迴圈(程式碼)
-      </a>
-      </td>
-    </tr>
-  </table>
-</div>
-<div id="1SC577Y3BI10T077FICSGItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
-  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
-    <tr>
-      <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/forHui-Quan "TITLE="">
-      for迴圈(程式碼)
+      <a href="https://repl.it/@z1z1z1joey/loopDie-Dai "TITLE="">
+      loop迭代(程式碼)
       </a>
       </td>
     </tr>
@@ -409,17 +372,6 @@
     </tr>
   </table>
 </div>
-<div id="1SB557L07I1QRNYSTI4PPItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
-  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
-    <tr>
-      <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/caseTiao-Jian-Pan-Duan-Shi "TITLE="">
-      case條件判斷式
-      </a>
-      </td>
-    </tr>
-  </table>
-</div>
 <div id="1SB4RQ3KHI1C1X9Z9I1BHItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
   <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
     <tr>
@@ -431,12 +383,12 @@
     </tr>
   </table>
 </div>
-<div id="1SB4RQSS6I1LFMRDZI1D6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<div id="1SB54PWC6IVKNL1SI4CGItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
   <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
     <tr>
       <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/forHui-Quan "TITLE="">
-      for迴圈(程式碼)
+      <a href="https://repl.it/@z1z1z1joey/San-Yuan-Yun-Suan-Zi "TITLE="">
+      三元運算子
       </a>
       </td>
     </tr>
@@ -453,12 +405,45 @@
     </tr>
   </table>
 </div>
-<div id="1SB4SBLZKI1JK1MSXI1X6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+<div id="1SB4S1DLMIMCRMRGI1NBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
   <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
     <tr>
       <td nowrap><font face="Geneva, Arial" size=2>
-      <a href="https://repl.it/@z1z1z1joey/loopDie-Dai "TITLE="">
-      loop迭代(程式碼)
+      <a href="https://repl.it/@z1z1z1joey/unlessTiao-Jian-Pan-Duan-Shi "TITLE="">
+      unless條件判斷式
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB557L07I1QRNYSTI4PPItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/caseTiao-Jian-Pan-Duan-Shi "TITLE="">
+      case條件判斷式
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB4RQSS6I1LFMRDZI1D6ItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/forHui-Quan "TITLE="">
+      for迴圈(程式碼)
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1SB5C612FIJSYB3HI63YItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://repl.it/@z1z1z1joey/downtoDie-Dai "TITLE="">
+      downto迭代(程式碼)
       </a>
       </td>
     </tr>
